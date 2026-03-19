@@ -158,6 +158,7 @@ const App: React.FC = () => {
           <div className="divider"></div>
           <div className="mono-11">BUILT: GOOGLE AI STUDIO</div>
           <div className="mono-11">ARTIFACTS: GOOGLE NOTEBOOKLM</div>
+          <div className="mono-11">RAW ASSETS: <a href="https://drive.google.com/drive/folders/1Foex_2JxPonPb2GrhRKwx3JW4TPSczD7?usp=drive_link" target="_blank" rel="noopener noreferrer">GOOGLE DRIVE</a></div>
           <div className="mono-11">DEPLOYED: 2026</div>
         </div>
       </footer>

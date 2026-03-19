@@ -125,7 +125,7 @@ const App: React.FC = () => {
                 <li>DIASPORA COMMUNITIES</li>
               </ul>
             </a>
-            <a href="https://musicdna.app" target="_blank" rel="noopener noreferrer" className="p-card">
+            <a href="https://musicdna.lovable.app/" target="_blank" rel="noopener noreferrer" className="p-card">
               <h3 className="grotesk-48">MUSIC DNA</h3>
               <div className="divider"></div>
               <ul className="meta-list">

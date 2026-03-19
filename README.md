@@ -140,7 +140,7 @@ If I were to expand this:
 ## Contact
 
 **Tobi Afolayan**  
-[tobiafo.com](https://tobiafo.com) | [Apollo Wrldx](https://apollowrldx.com) | [Music DNA](https://musicdna.tobiafo.com)
+[tobiafo.com](https://tobiafo.com) | [Apollo Wrldx](https://apollowrldx.com) | [Music DNA](https://musicdna.lovable.app/)
 
 ---
 

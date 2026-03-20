@@ -21,9 +21,10 @@ const App: React.FC = () => {
 
       {/* 001 Hero */}
       <section className="hero grain" id="sec-001">
-        <div className="top-right metadata mono-11">PROJECT: GOOGLE/CREATIVE/2026</div>
+        <div className="top-left metadata mono-11">GOOGLE</div>
+        <div className="top-right metadata mono-11">PROJECT: CREATIVE/FELLOWSHIP/2026</div>
         <div className="bottom-left metadata mono-11">EST. KWARA STATE, NIGERIA — 1998</div>
-        <div className="bottom-right metadata mono-11">CURRENT: DALLAS/BROOKLYN</div>
+        <div className="bottom-right metadata mono-11">CURRENT: BROOKLYN, NY</div>
         
         <div className="content-wrap">
           <span className="section-num mono-10">001 — CULTURAL INFRASTRUCTURE</span>
@@ -44,7 +45,6 @@ const App: React.FC = () => {
               USING GOOGLE NOTEBOOKLM, I CREATED THREE FORMATS EXPLORING MY IDENTITY AS A CULTURAL INFRASTRUCTURE BUILDER: A CONVERSATIONAL PODCAST, A VISUAL PRESENTATION, AND A VIDEO OVERVIEW.
             </p>
           </div>
-          <div className="metadata-br mono-11">DEADLINE: 23.03.2026</div>
         </div>
       </section>
 

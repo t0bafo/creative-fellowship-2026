@@ -103,7 +103,7 @@ creative-fellowship-2026/
 
 ## Content Embed Sources
 
-- **Video:** YouTube (public)
+- **Video:** YouTube (unlisted)
 - **Audio:** SoundCloud (public)
 - **Slides:** Google Drive (PDF, public view)
 

@@ -58,6 +58,7 @@ function AppRoutes() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#F5F1E8]">
+      <div className="portfolio-grid-overlay" aria-hidden="true">{Array.from({length: 12}, (_, i) => <span key={i} />)}</div>
       <Navigation />
       <div className="flex-1">
         {pageContent}

@@ -5,22 +5,9 @@ import { ArrowLeft, ArrowUpRight, Play, ExternalLink, Music, Video, Presentation
 
 export function ArchitectingCultureView() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+    <div className="fellowship-archive min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
       {/* Grid Overlay for Brutalist Visual Identity */}
-      <div className="grid-overlay" aria-hidden="true">
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-        <div className="grid-line"></div>
-      </div>
+
 
       {/* Top Banner & Context Disclosure */}
       <div className="bg-[#121212] border-b border-[#262626] px-6 py-4 font-mono text-xs text-[#A39A8B]">

@@ -12,11 +12,8 @@
   --font-mono: 'IBM Plex Mono', monospace;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 0 !important;
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
 }
 
 html {
@@ -83,7 +80,7 @@ body {
 }
 
 /* Layout Blocks */
-section {
+.fellowship-archive section {
   position: relative;
   width: 100%;
   padding: 120px 20px;
@@ -196,6 +193,10 @@ section {
 @media (max-width: 768px) {
   .grotesk-72 { font-size: 42px; }
   .grotesk-48 { font-size: 32px; }
-  section { padding: 80px 20px; }
+  .fellowship-archive section { padding: 80px 20px; }
   .hero .metadata { font-size: 9px; }
 }
+
+:focus-visible { outline: 2px solid #cf8b59; outline-offset: 3px; }
+.portfolio-grid-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 30; display: grid; grid-template-columns: repeat(12, 1fr); }
+.portfolio-grid-overlay span { border-right: 1px solid rgba(212, 207, 197, .07); }

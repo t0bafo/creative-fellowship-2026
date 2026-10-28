@@ -168,7 +168,7 @@ export function LandingView() {
               rel="noopener noreferrer"
               className="flex items-center space-x-1 text-[#8B4513] hover:text-[#F5F1E8]"
             >
-              <span>GITHUB REPO</span>
+              <span>GITHUB PROFILE</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>

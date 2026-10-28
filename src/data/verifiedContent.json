@@ -1,0 +1,394 @@
+{
+  "onePager": [
+    {
+      "kind": "heading",
+      "text": "Amazon Music listening and fan experience"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Tobi Afolayan  |  Listener observations and proposed experiences  |  October 27 2026"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I use Spotify for everyday listening and discovery, and Apple Music for parts of my existing library and album exploration. While using Amazon Music more intentionally, I kept asking what would make it my first choice. My strongest interest is how an easier listening experience could support a more personal, lasting connection with music and artists."
+    },
+    {
+      "kind": "heading",
+      "text": "Make everyday listening easier"
+    },
+    {
+      "kind": "paragraph",
+      "text": "These observations come from my own listening notes from August 2026 and need checking against the current app version and subscription tier."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Return to saved music. When I open the app to hear something I saved, I want a clear, immediate route back to it."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Move between a track and its album. I found View Album inside More Options. I wanted an obvious route from the playing track to its full project."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Find the people behind the music. I eventually found credits through X-Ray, which I appreciated. Finding lyrics and credits felt less obvious than I expected."
+    },
+    {
+      "kind": "heading",
+      "text": "Two experiences I would like to explore"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Save what a song means to me. Listening to Llona has brought up questions about identity and change in my own life. I would like an optional, private way to attach a short reflection to a track, perhaps with a chosen timestamp, then revisit it later. My note would provide the meaning; listening history alone should not infer how I felt."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Carry a live moment into everyday listening. Imagine discovering a song during a livestream and saving that moment with a clear route to the studio track, artist page and replay where available. After the show, I could return to what caught my attention. This is a proposed journey to test, rather than a claim that each component is currently missing."
+    },
+    {
+      "kind": "heading",
+      "text": "Start with a small test"
+    },
+    {
+      "kind": "paragraph",
+      "text": "First, observe listeners finding a saved album, opening the album behind a playing track, and locating credits. Track completion, time and wrong turns. Then test a simple prototype for saving and revisiting a personal note or performance moment. Does it feel useful enough to return to voluntarily? Can people find what they saved? Does the extra step interrupt listening?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My hypothesis is that preserving something personally meaningful could give listeners another reason to return. That needs testing. I bring a listener’s perspective alongside software engineering and event production experience, and would welcome feedback on which of these questions is most useful to investigate."
+    }
+  ],
+  "observations": [
+    {
+      "kind": "paragraph",
+      "text": "Expanded and polished from my listening notes, August 2026. These are individual observations, questions, and ideas rather than a product audit or a representative user study. App versions, subscription tiers, and experiences can differ; verify the present experience before making current product claims."
+    },
+    {
+      "kind": "heading",
+      "text": "Where I start"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I use different services for different reasons. Apple Music holds much of my older library and is where I often turn to explore an artist’s catalog or share music with friends. Spotify is where I listen day to day, find music, and exchange songs with people I connect with through music. Those experiences shape the question I bring to Amazon Music: what would make me choose it, return to it, and feel at home there?"
+    },
+    {
+      "kind": "heading",
+      "text": "Return to my music"
+    },
+    {
+      "kind": "paragraph",
+      "text": "When I open the app, I often want the music I have already saved. I want that route to be immediate, welcoming, and personal. Discovery can build on that foundation, but I should not have to search for my own library every time."
+    },
+    {
+      "kind": "heading",
+      "text": "Make the connections easier to find"
+    },
+    {
+      "kind": "paragraph",
+      "text": "While listening, I wanted a clear way to move from a track to the album and artist, discover featured artists, and share an artist profile. In my notes, View Album was inside More Options. I later discovered that tapping the artist name on a track opened the artist profile. The functionality I missed initially may have existed; my difficulty finding it is part of the observation."
+    },
+    {
+      "kind": "heading",
+      "text": "Show the people behind the music"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I looked for lyrics, credits, descriptions, and context around artists and projects. I eventually found X-Ray and appreciated being able to see credits there. I would like those paths to be easier to notice, especially when I’m already listening. An incomplete profile does not tell me why information is missing."
+    },
+    {
+      "kind": "heading",
+      "text": "Listen and share without breaking the flow"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I noted that I could not readily find a way to queue an album while another track played. I would test this again before treating it as a current product limitation. I also want artist-profile sharing to feel straightforward, with a clear action close to where I discover the artist."
+    },
+    {
+      "kind": "heading",
+      "text": "Offer choice in interaction"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Voice control is not my preferred way to navigate, partly because of my experience with my accent. A useful experience should give people reliable, easy-to-find alternatives to voice commands."
+    },
+    {
+      "kind": "heading",
+      "text": "What worked for me"
+    },
+    {
+      "kind": "paragraph",
+      "text": "X-Ray became more interesting once I found the credits. I also found content recommendations promising, and appreciated a notification about a Rema concert in New York. Those are personal reactions, not proof of how well the same features work for everyone."
+    },
+    {
+      "kind": "heading",
+      "text": "A listening history with personal context"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Some songs take me back to a person, a place, an outfit, or a season of my life. I want a simple, optional way to capture why a song matters in the moment and revisit that context later without leaving my listening experience. Any personal note should be controlled by the listener. AI assistance is a question to explore, not a prerequisite or a substitute for the listener’s own meaning."
+    },
+    {
+      "kind": "heading",
+      "text": "Music beyond playback"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I’m interested in how discovery, live events, campus experiences, artist activations, and releases could deepen the relationship between artists and fans. A useful starting point is a continuous journey: find a performance, experience it, save a meaningful moment, and return to the music afterward."
+    },
+    {
+      "kind": "heading",
+      "text": "Questions about Nigeria"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I also want to examine how digital access and local partnerships shape music experiences in Nigeria, and how creators and communities participate in the value generated there. This is a research direction, not a claim that a particular solution has been validated."
+    }
+  ],
+  "concert": [
+    {
+      "kind": "heading",
+      "text": "What does it mean to be at a concert"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Watching Asake on YouTube and thinking about the people outside the room"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I watched Asake’s Red Bull Symphonic performance on YouTube. I wasn’t at Kings Theatre. The performance happened in Brooklyn on November 8, 2025, and the full recording arrived on his official channel in December. [1–2]"
+    },
+    {
+      "kind": "paragraph",
+      "text": "That distinction matters to the question I’ve been sitting with. I had access to the performance, but what kind of access was it? What does it mean to experience a concert after it has happened, through a screen, somewhere else?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Asake performed with conductor Glenn Alexander II and an orchestra, bringing his music into a different arrangement and setting. [1] For me, that makes this a useful place to begin. The recording lets someone encounter a version of the music that belongs to a particular performance. It also raises questions about everything around that music: the room, the audience, and the relationship between the people onstage and the people listening."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I keep wondering what we should want for the fan who cannot be there."
+    },
+    {
+      "kind": "heading",
+      "text": "Who gets to be in the room"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Someone can care deeply about an artist and still miss the show. They may live in another country. The ticket may be beyond their budget. Work, family, transport, or access needs may make attendance difficult. Their relationship with the music still exists."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I’m Nigerian, studying music business and music technology, and working as a software engineer. I also produce events. Those experiences keep bringing me back to the same problem from different directions: what are we actually trying to make possible for the person using what we build?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "With remote concerts, making the performance available is already valuable. I could watch this one because a recording existed and someone made it accessible. But availability leaves room for another question. How do we help a remote listener feel involved in the performance they chose to watch?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I don’t have a finished answer. I think it deserves more attention than simply adding another feature to a video player."
+    },
+    {
+      "kind": "heading",
+      "text": "What exactly are we trying to preserve"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Producing events makes me think about what happens around a performance. People arrive with expectations. They react to one another. A familiar song can mean something different when other people are responding to it nearby. From that perspective, the audience is part of what I want to understand."
+    },
+    {
+      "kind": "paragraph",
+      "text": "My graduate research started with a narrower question: how could headphone listening preserve the impression of performers occupying a shared acoustic space?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Two terms helped me become more precise. Externalization describes hearing a sound as coming from outside your head. Envelopment describes the sensation of being surrounded by sound. They concern different aspects of listening. Neither, by itself, establishes that someone feels they attended a concert. [3]"
+    },
+    {
+      "kind": "paragraph",
+      "text": "That distinction changed the way I thought about the problem. Clearer sound, a more convincing acoustic space, and a stronger connection to other listeners might each improve an experience. They need to be investigated separately before we assume they add up to the same thing."
+    },
+    {
+      "kind": "paragraph",
+      "text": "When I ask whether a remote fan can feel closer to a performance, I need to say what “closer” means."
+    },
+    {
+      "kind": "heading",
+      "text": "What the research can tell us"
+    },
+    {
+      "kind": "paragraph",
+      "text": "One study I reviewed examined speech reproduced over headphones as virtual sound sources. Coupling large head movements with head tracking improved externalization, including for listeners without previous binaural listening experience. [4] Put simply, allowing the sound scene to respond to the listener’s movement helped the voice feel more external."
+    },
+    {
+      "kind": "paragraph",
+      "text": "That gives me a reason to investigate how movement and spatial sound might work together. It does not establish that the same setup makes a concert more enjoyable, or makes someone feel connected to a crowd. The study used speech under controlled conditions. A concert introduces different material and different expectations."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I also cannot diagnose the capture or mixing choices behind Asake’s recording from my experience watching it. I’m using it as the starting point for a question, rather than as evidence that a particular production technique failed."
+    },
+    {
+      "kind": "paragraph",
+      "text": "The useful next step, to me, would be a comparison. Let people hear the same performance through different presentations, then ask distinct questions. Where do they perceive the performers? Do they feel surrounded by the sound? Do they enjoy it more? Does it help them stay involved?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "If a more complicated system produces no meaningful benefit for the listener, that is something I want to know early."
+    },
+    {
+      "kind": "heading",
+      "text": "What would I build for the person watching"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I’d begin with someone who already wants to watch the artist. They should be able to find the performance, understand how to listen, and settle into it without unnecessary effort. Any added technology has to earn its place in that experience."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Then I would explore the social part. Could two friends in different cities choose to watch together and stay in sync? Would they want to hear each other’s reactions, or would that interrupt the music? Some people may want company; others may prefer to listen alone. I’d want to learn what people actually choose before deciding that more interaction is better."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Watching a recording later also offers something different from joining a performance as it happens. I can return to a passage, pause, or listen again. For a real-time experience, the question might be what makes joining at that particular time worthwhile. For a replay, it might be what makes the performance worth returning to."
+    },
+    {
+      "kind": "paragraph",
+      "text": "There’s something personal here too. If a moment in a performance stays with me, could I save it with a short note about why? I’m interested in giving listeners a way to preserve an association they choose to express. A listening history cannot tell the whole story of what a song meant to someone."
+    },
+    {
+      "kind": "heading",
+      "text": "Where I want to take this"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The research direction I’m working toward begins with sound, but it keeps leading me back to people. I want to understand which parts of a live experience remote listeners value, which can be translated, and which require a different approach altogether."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Asake’s performance gives me a concrete example to keep returning to. The concert happened in one room, on one night. I encountered it later through YouTube. What I want to investigate is how much more thoughtfully we could design for the people whose relationship with that performance begins somewhere else."
+    },
+    {
+      "kind": "heading",
+      "text": "Sources and further listening"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[1] Red Bull. Red Bull Symphonic featuring Asake. Official event listing, November 8, 2025, Kings Theatre, Brooklyn. https://www.redbull.com/us-en/events/symphonic-nyc-asake"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[2] ASAKE. Asake — Red Bull Symphonic Full Performance. Official artist channel, published December 11, 2025. https://www.youtube.com/watch?v=lIp-OwMozKI"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[3] Best, V., et al. (2020). Sound Externalization A Review of Recent Research. Trends in Hearing. https://doi.org/10.1177/2331216520948390. The distinction between externalization and envelopment also draws on my September 2026 paper Preserving Auditory Presence in Remote Concert Listening, including Dick and Vigeant (2019), https://doi.org/10.1121/1.5096161."
+    },
+    {
+      "kind": "paragraph",
+      "text": "[4] Hendrickx, E., et al. (2017). Improvement of Externalization by Listener and Source Movement Using a Binauralized Microphone Array. Journal of the Audio Engineering Society, 65(7/8), 589–599. https://doi.org/10.17743/jaes.2017.0018"
+    }
+  ],
+  "streaming": [
+    {
+      "kind": "heading",
+      "text": "What happens after a song reaches us"
+    },
+    {
+      "kind": "paragraph",
+      "text": "On Nigerian music and the gap between being heard and benefiting from it"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Tobi Afolayan"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The outro of Llona’s “What Do I Do?” has been staying with me. I hear questions about where we come from, who we are becoming, and whether people will still recognize us when our lives begin to look different. That is my reading of the song. It found me while I was asking some of those questions myself."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I can explain what the music gave me. I know much less about what my listening gives back to the people who made it."
+    },
+    {
+      "kind": "paragraph",
+      "text": "That gap has become harder to ignore as I study music business. I work in software, where I am used to asking what has to happen behind an experience for it to work. A song starts playing almost immediately. The information and agreements behind that moment are much harder to follow."
+    },
+    {
+      "kind": "paragraph",
+      "text": "When Nigerian music travels, I feel proud. I grew up in Ilorin. Hearing music from home reach people elsewhere means something to me. But I keep coming back to a question: what would tell us that the people making it are benefiting from that reach?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "A listener count gives us part of the story. It cannot tell us what somebody owns, what their agreement allows them to keep, or whether a payment has reached them. Those questions require looking somewhere less visible than the charts."
+    },
+    {
+      "kind": "paragraph",
+      "text": "While writing a paper on streaming, I found myself separating problems I had initially placed together. Getting music onto a service is one task. Helping people discover it is another. Collecting revenue and getting the correct share to the correct person involve further work. Progress in one part does not settle the others."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Consider two hypothetical creators. One receives an accurate payment under an agreement that leaves them with a small share. Another is entitled to a larger share, but information needed to identify their contribution is missing. Both might look at a statement and feel something is wrong. Their situations need different responses. Better data would help the second person; the first may need better terms."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Even the number of plays needs context. Spotify says its royalties are calculated through streamshare rather than a fixed payment for every play. Its market-level royalty pools depend on subscription and advertising revenue. What ultimately reaches an artist also depends on agreements with the organizations handling their music. A million plays cannot, by itself, tell us someone’s take-home income. [1]"
+    },
+    {
+      "kind": "paragraph",
+      "text": "This matters when we talk about Nigeria. I want to understand what listening and paying actually look like there, rather than take an explanation built around the United States and change the artist’s name."
+    },
+    {
+      "kind": "paragraph",
+      "text": "There are already local arrangements worth examining. Audiomack offers an option to activate Audiomack+ using MTN Nigeria airtime. [2] That is a concrete example of a music service adapting how someone can pay. It raises questions I want to pursue: who uses that route, what makes it useful, and how much of the resulting revenue reaches creators? The existence of a payment option does not answer those questions, but it gives the research somewhere specific to begin."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Then there is the information that travels with the music. The person we recognize on the cover may be one of several contributors. For payments to reach the appropriate people, organizations need to know which work was used and who has a claim to it."
+    },
+    {
+      "kind": "paragraph",
+      "text": "In the United States, the Mechanical Licensing Collective provides tools for registering musical works and matching recordings to those works so the digital audio mechanical royalties it administers can be paid. [3] That is one category of royalties in one jurisdiction. It does not establish the scale of any Nigerian problem. It does show that making music available and identifying who should receive a particular payment are separate jobs."
+    },
+    {
+      "kind": "paragraph",
+      "text": "As an engineer, I am drawn to that work. I also have to resist assuming every difficulty needs an application. A database can hold information. Someone still needs authority to correct it, a reason to maintain it, and a process for resolving conflicting claims. Sometimes the next useful question concerns responsibility rather than technology."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I think about the creator trying to make sense of all of this while continuing to create. Would they know what a statement was telling them? Could they check a missing payment? Who could they ask, and would that person explain the answer in a way they could use?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "These are the questions behind the infrastructure I want to understand. I am still learning which problems are most consequential, and whose experience I need to hear before deciding what to build."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Llona’s music gave me a way to think about my own life. That does not give me access to his business arrangements, and I cannot infer his financial circumstances from how deeply a song moved me. It does make me care about the conditions that allow people to keep making work like this."
+    },
+    {
+      "kind": "paragraph",
+      "text": "For Nigeria and the wider industry, success should mean more than exporting culture or increasing play counts. It should mean building the systems through which creators can participate in, understand, and benefit from the value their music generates."
+    },
+    {
+      "kind": "paragraph",
+      "text": "I wrote that at the end of my paper. I am beginning to understand how much work is inside it."
+    },
+    {
+      "kind": "heading",
+      "text": "Sources"
+    },
+    {
+      "kind": "paragraph",
+      "text": "1  Spotify  How is streamshare calculated?; Understanding Spotify royalties\nhttps://loudandclear.byspotify.com/faqs/how-is-streamshare-calculated/\nhttps://support.spotify.com/lc/artists/article/understanding-spotify-royalties/"
+    },
+    {
+      "kind": "paragraph",
+      "text": "2  Audiomack  Subscribe to Audiomack+ with MTN Nigeria\nhttps://audiomack.com/plus/activate/mtn/ng"
+    },
+    {
+      "kind": "paragraph",
+      "text": "3  The Mechanical Licensing Collective  Royalty Income Tracking\nhttps://www.themlc.com/royalty-income-tracking"
+    }
+  ]
+}

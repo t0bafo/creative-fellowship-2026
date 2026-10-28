@@ -52,7 +52,7 @@ export const AUTHOR_BIO = {
   creativeIdentity: "Listener, Software Engineer, Event Producer, Graduate Student",
   location: "Brooklyn, NY",
   bio: "Exploring the intersections of music, technology, research, and cultural experiences. Currently examining how sound travels through technological systems, how communities form around live performance, and how independent artists build sustainable enterprises.",
-  github: "https://github.com/t0bafo/creative-fellowship-2026",
+  github: "https://github.com/t0bafo",
   portfolioDomain: "creative.tobiafo.com"
 };
 

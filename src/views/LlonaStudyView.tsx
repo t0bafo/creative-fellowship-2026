@@ -18,7 +18,6 @@ export function LlonaStudyView() {
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showThumbnails, setShowThumbnails] = useState(false);
-  const [showTranscriptDrawer, setShowTranscriptDrawer] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const totalSlides = LLONA_STUDY_METADATA.totalSlides;
@@ -138,19 +137,6 @@ export function LlonaStudyView() {
                 </button>
 
                 <button
-                  onClick={() => setShowTranscriptDrawer(!showTranscriptDrawer)}
-                  className={`p-2 border transition-colors flex items-center space-x-1 ${
-                    showTranscriptDrawer
-                      ? "border-[#8B4513] text-[#8B4513] bg-[#141414]"
-                      : "border-[#333333] text-[#A39A8B] hover:text-[#F5F1E8]"
-                  }`}
-                  aria-label="Toggle OCR Machine Transcript"
-                >
-                  <FileText className="w-4 h-4" />
-                  <span className="hidden md:inline">MACHINE OCR NOTES</span>
-                </button>
-
-                <button
                   onClick={toggleFullscreen}
                   className="p-2 border border-[#333333] text-[#A39A8B] hover:text-[#F5F1E8] transition-colors flex items-center space-x-1"
                   aria-label={isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
@@ -259,58 +245,7 @@ export function LlonaStudyView() {
             </div>
           )}
 
-          {/* Machine OCR / Transcription Drawer (Clearly Disclaimed as Unverified Reference) */}
-          {showTranscriptDrawer && (
-            <div className="border border-[#262626] bg-[#0E0E0E] p-6 space-y-4">
-              <div className="flex items-start justify-between gap-4 pb-3 border-b border-[#222222]">
-                <div className="flex items-center space-x-2 font-mono text-xs text-[#B7410E]">
-                  <Info className="w-4 h-4" />
-                  <span className="font-bold uppercase">
-                    Machine OCR Transcription Reference (Unverified)
-                  </span>
-                </div>
-                <button
-                  onClick={() => setShowTranscriptDrawer(false)}
-                  className="font-mono text-xs text-[#888888] hover:text-[#F5F1E8]"
-                >
-                  [CLOSE]
-                </button>
-              </div>
-
-              <div className="p-3 bg-[#161616] border-l-2 border-[#B7410E] font-mono text-xs text-[#A39A8B] leading-relaxed">
-                {LLONA_STUDY_METADATA.transcriptDisclaimer}
-              </div>
-
-              <div className="font-mono text-xs text-[#D4CFC5] space-y-2 max-h-60 overflow-y-auto pr-2">
-                <div className="text-[#8B4513] font-bold">SLIDE {currentSlide} TRANSCRIPTION NOTE:</div>
-                <p className="leading-relaxed bg-[#111111] p-3 border border-[#222222]">
-                  {currentSlideData.transcriptionExcerpt}
-                </p>
-              </div>
-            </div>
-          )}
-
-          {/* PDF Source Asset Note */}
-          <div className="border border-[#1F1F1F] bg-[#0C0C0C] p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono text-xs text-[#A39A8B]">
-            <div>
-              <span className="text-[#F5F1E8] font-bold uppercase block mb-1">
-                MASTER ASSET STORAGE REFERENCE
-              </span>
-              <p>
-                The master document PDF containing the original high-resolution vector assets is preserved at{" "}
-                <span className="text-[#8B4513]">public/assets/aistudio/Creative_Portfolio_Master_Content.docx_4527cc63.pdf</span>.
-              </p>
-            </div>
-            <a
-              href="/assets/aistudio/Creative_Portfolio_Master_Content.docx_4527cc63.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 border border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-[#F5F1E8] transition-colors shrink-0 uppercase font-bold"
-            >
-              <Download className="w-4 h-4" />
-              <span>VIEW MASTER PDF</span>
-            </a>
-          </div>
+          <p className="text-sm leading-relaxed text-[#D4CFC5]">Slides are presented as images. A verified text transcript is not yet available.</p>
         </div>
       </main>
 

@@ -1,147 +1,110 @@
-# Creative Fellowship 2026 - Digital Artifact
+# Tobi Afolayan — Portfolio & Research Archive
 
-Landing page showcasing my creative identity as a cultural infrastructure builder, created for Google Creative Fellowship application.
+Editorial site for work across music, technology, research, and live culture. The Google Creative Fellowship artifact is one piece in the archive, preserved at `/work/architecting-culture`.
 
-**Live Site:** [creative.tobiafo.com](https://creative.tobiafo.com)
-
----
-
-## The Brief
-
-For the Google Creative Fellowship application, I was asked to create a digital artifact showcasing who I am and what I love to do, creatively.
-
-Rather than a traditional portfolio, I used **Google NotebookLM** to synthesize three personal reflections into multiple formats:
-- 19-minute conversational podcast (AI-generated dialogue)
-- 2-minute video overview
-- 15-slide presentation ("Architecting Culture")
-
-This landing page presents all three formats in a brutalist editorial design that reflects my approach: technical precision meets cultural authenticity.
+**Live site:** [creative.tobiafo.com](https://creative.tobiafo.com)  
+**Repository:** [t0bafo/creative-fellowship-2026](https://github.com/t0bafo/creative-fellowship-2026)
 
 ---
 
-## Design Philosophy
+## What the site is
 
-**Aesthetic Direction:** Brutalist Archive
-- Inspired by A-COLD-WALL*, Helmut Lang, architectural minimalism
-- Monochrome palette (black, bone white) with oxidized copper accents
-- Grid-based layout with visible reference numbers
-- Metadata as design elements (coordinates, timestamps, project codes)
-- Asymmetric content placement
-- Hard edges, no smooth transitions
+The index introduces the practice. Selected Work is the catalog. Each piece is a route with its own format: product writing, published essays, a slide study, or the fellowship audiovisual artifact.
 
-**Why this aesthetic:**
-- Engineering precision → Grid systems, measurements, structure
-- Cultural authenticity → Raw, unpolished, real
-- Infrastructure mindset → Architectural, foundational
-- Nigerian → American → Brutalism exists in both contexts
+The through-line is how sound moves through systems: listening interfaces, live presence, streaming infrastructure, and independent artist enterprises.
 
----
+| # | Piece | Route | What it is |
+|:---:|:---|:---|:---|
+| 001 | Listening and Fan Experience | `/work/listening-and-fan-experience` | Independent listener notes and product ideas for Amazon Music. A one-pager and an observations log. Not commissioned or endorsed by Amazon. |
+| 002 | Presence Beyond the Room | `/work/presence-beyond-the-room` | Essay on spatial sound, virtual venues, and what it means to be at a concert. |
+| 003 | The Systems Behind the Music | `/work/the-systems-behind-the-music` | Essay on metadata, algorithmic curation, streaming economics, and platform governance. |
+| 004 | Llona: Artist Enterprise Study | `/work/llona-artist-enterprise` | 21-slide educational strategy study on catalog equity, community monetization, and touring. Independent research, not an artist endorsement. |
+| 005 | Architecting Culture | `/work/architecting-culture` | Preserved Creative Fellowship submission: pitch film, sound piece, 15-slide deck, and links to Apollo Wrldx, Music DNA, and the wider portfolio. |
 
-## Technical Stack
-
-- **Framework:** Vite + React + TypeScript
-- **AI Generation:** Google AI Studio (code generation)
-- **Content Source:** Google NotebookLM (audio, video, slides)
-- **Hosting:** Vercel
-- **Domain:** tobiafo.com
-- **Typography:** Space Grotesk (grotesque), IBM Plex Mono (technical)
+Navigation is Index, Selected Work, and Archive (Fellowship). Old fellowship anchors such as `#sec-001` on `/` redirect into `/work/architecting-culture`.
 
 ---
 
-## Development Process
+## How the content review shows up
 
-### Phase 1: Content Creation (NotebookLM)
-1. Uploaded three source documents to NotebookLM
-2. Generated 19-minute audio overview (conversational podcast format)
-3. Generated video overview (2-3 minute visual summary)
-4. Generated 15-slide presentation deck
+Long-form reading on the public pages comes from a reviewed source, not from copy left inside the view components.
 
-### Phase 2: Design Direction
-1. Researched brutalist/editorial web design (Pharrell Humanrace, A-COLD-WALL*, SSENSE)
-2. Defined aesthetic as "Brutalist Archive"
-3. Established color palette and typography system
-4. Created design document with section-by-section specifications
+`src/data/verifiedContent.json` holds the text that readers see, as heading and paragraph blocks:
 
-### Phase 3: Code Generation (AI Studio)
-1. Used Google AI Studio to generate React/TypeScript code
-2. Provided detailed design prompt with brutalist specifications
-3. Generated complete Vite project with all components
+- `onePager` and `observations` — Listening and Fan Experience
+- `concert` — Presence Beyond the Room
+- `streaming` — The Systems Behind the Music
 
-### Phase 4: Deployment
-1. Synced AI Studio project to GitHub
-2. Connected GitHub repo to Vercel
-3. Configured custom domain
-4. Automated deployment pipeline (GitHub → Vercel)
+`src/components/VerifiedReading.tsx` renders those blocks and turns bare URLs into links. `EssayView` chooses `concert` or `streaming` from the essay slug. The listening page switches between the one-pager and the observations log.
+
+`src/data/masterContent.ts` still owns the catalog around that reading: the author bio, the selected-work index, essay routing metadata, Llona slide metadata, and the fellowship embeds (YouTube, SoundCloud, slide deck, raw assets).
+
+The Llona study is still an image deck. The page states that a verified text transcript is not available yet, so that piece was not folded into `verifiedContent.json`.
+
+To change published prose, edit `verifiedContent.json`. To change titles, routes, tags, or fellowship media, edit `masterContent.ts`.
 
 ---
 
-## File Structure
-```
-creative-fellowship-2026/
-├── src/
-│   ├── App.tsx           # Main application component
-│   ├── main.tsx          # Entry point
-│   └── index.css         # Brutalist styling
-├── index.html            # HTML shell
-├── vite.config.ts        # Build configuration
-└── README.md             # This file
+## Design
+
+Brutalist archive: bone white on near-black, oxidized copper (`#8B4513`), Space Grotesk for titles, IBM Plex Mono for metadata. Numbered sections, hard edges, and a visible grid. The fellowship page keeps the original full-bleed video, audio, and slide treatment.
+
+---
+
+## Stack
+
+- Vite, React 19, TypeScript
+- Tailwind CSS 4
+- Client-side router in `src/router.tsx` (no React Router)
+- Vercel, with a rewrite so every path serves the SPA
+- Domain: creative.tobiafo.com
+
+```bash
+npm install
+npm run dev    # http://localhost:3000
+npm run build
+npm run lint   # tsc --noEmit
 ```
 
 ---
 
-## Key Features
+## File structure
 
-- **Full-bleed media:** Video and audio embeds hit screen edges
-- **Section numbering:** Each section labeled (001, 002, 003...)
-- **Metadata decoration:** Coordinates, timestamps, project codes in margins
-- **Asymmetric layouts:** Content intentionally off-center
-- **Brutalist typography:** Condensed grotesque + monospace
-- **Instant hover states:** No smooth transitions (brutalism doesn't "fade")
-- **Responsive design:** Mobile-first, maintains aesthetic on all screens
+```
+src/
+├── App.tsx                         # Route switch
+├── router.tsx                      # History API, legacy #sec-* redirects, Link
+├── index.css
+├── components/
+│   ├── Navigation.tsx
+│   └── VerifiedReading.tsx         # Renders verified heading/paragraph blocks
+├── data/
+│   ├── masterContent.ts            # Index, bios, metadata, fellowship embeds
+│   └── verifiedContent.json        # Reviewed long-form reading
+└── views/
+    ├── LandingView.tsx
+    ├── SelectedWorkView.tsx
+    ├── ListeningExperienceView.tsx
+    ├── EssayView.tsx
+    ├── LlonaStudyView.tsx
+    ├── ArchitectingCultureView.tsx
+    └── NotFoundView.tsx
+```
 
----
-
-## Content Embed Sources
-
-- **Video:** YouTube (unlisted)
-- **Audio:** SoundCloud (public)
-- **Slides:** Google Drive (PDF, public view)
-
----
-
-## What This Demonstrates
-
-**Creative + Technical Fusion:**
-- Using AI tools (NotebookLM, AI Studio) for sophisticated content generation
-- Translating design philosophy into technical specifications
-- Building editorial-grade interfaces that reflect cultural identity
-
-**Systems Thinking:**
-- Multi-format content strategy (audio for depth, video for hook, slides for reference)
-- Automated deployment pipeline (edit → commit → deploy)
-- Design system that scales (grid, typography, spacing rules)
-
-**Cultural Infrastructure:**
-- The landing page itself is infrastructure—a platform to showcase how I build platforms
-- Every design decision reinforces the "culture as infrastructure" thesis
+Fellowship media lives outside the repo: a public YouTube film, a public SoundCloud piece, and a public Google Drive deck. Links are in `ARCHITECTING_CULTURE_METADATA`.
 
 ---
 
-## Future Iterations
+## Related work
 
-If I were to expand this:
-- Add interactive grid visualization showing event growth over time
-- Integrate Music DNA API for live playlist generation
-- Create parallax scroll sections for each Apollo event
-- Add Behind-the-scenes documentation of NotebookLM prompt engineering
+The archive points outward to the rest of the practice:
 
----
-
-## Contact
-
-**Tobi Afolayan**  
-[tobiafo.com](https://tobiafo.com) | [Apollo Wrldx](https://apollowrldx.com) | [Music DNA](https://musicdna.lovable.app/) | [Raw Assets](https://drive.google.com/drive/folders/1Foex_2JxPonPb2GrhRKwx3JW4TPSczD7?usp=drive_link)
+- [tobiafo.com](https://tobiafo.com)
+- [Apollo Wrldx](https://apollowrldx.com)
+- [Music DNA](https://musicdna.lovable.app/)
+- [GitHub](https://github.com/t0bafo)
+- [Fellowship raw assets](https://drive.google.com/drive/folders/1Foex_2JxPonPb2GrhRKwx3JW4TPSczD7?usp=drive_link)
 
 ---
 
-**Note:** This project was built in ~4 hours from concept to deployment, demonstrating rapid prototyping and AI-assisted development workflows.
+**Tobi Afolayan** — Brooklyn, NY

@@ -43,6 +43,7 @@ export interface PortfolioProject {
   format: string;
   focus: string;
   summary: string;
+  actionLabel: string;
   route: string;
   tags: string[];
 }
@@ -62,9 +63,10 @@ export const SELECTED_WORK_INDEX: PortfolioProject[] = [
     number: "001",
     title: "Listening and Fan Experience",
     subtitle: "Product Proposals & Qualitative Observations for Amazon Music",
-    format: "Observations & Product Proposals",
+    format: "Qualitative Study & Product Proposals",
     focus: "Modern music streaming interfaces, discovery friction, and artist-to-listener connection.",
-    summary: "A synthesis of qualitative listener observations and strategic product proposals examining the friction between passive catalog consumption and active listener connection on Amazon Music.",
+    summary: "Observations and product frameworks examining the friction between passive catalog consumption and active listener connection on Amazon Music.",
+    actionLabel: "Explore the study",
     route: "/work/listening-and-fan-experience",
     tags: ["Product Strategy", "UX Research", "Streaming Systems", "Amazon Music"]
   },
@@ -75,7 +77,8 @@ export const SELECTED_WORK_INDEX: PortfolioProject[] = [
     subtitle: "What does it mean to be at a concert?",
     format: "Published Essay",
     focus: "Immersive audio, spatial acoustics, and the evolving nature of live collective presence.",
-    summary: "An investigation into how spatial sound reproduction, virtual venues, and mediatized performances reshape the ritual of physical presence in live music.",
+    summary: "An inquiry into how spatial sound reproduction, virtual venues, and mediatized performances reshape the ritual of physical presence in live music.",
+    actionLabel: "Read the essay",
     route: "/work/presence-beyond-the-room",
     tags: ["Immersive Audio", "Spatial Acoustics", "Cultural Theory", "Live Music"]
   },
@@ -86,7 +89,8 @@ export const SELECTED_WORK_INDEX: PortfolioProject[] = [
     subtitle: "What happens after a song reaches us?",
     format: "Published Essay",
     focus: "Algorithmic curation, metadata supply chains, streaming economics, and platform governance.",
-    summary: "An inquiry into the invisible technical, legal, and economic infrastructure governing music distribution, algorithmic recommendation, and artist remuneration.",
+    summary: "An examination of the invisible technical, legal, and economic infrastructure governing music distribution, algorithmic recommendation, and catalog equity.",
+    actionLabel: "Read the essay",
     route: "/work/the-systems-behind-the-music",
     tags: ["Music Business", "Streaming Economics", "Metadata Supply Chain", "Algorithmic Governance"]
   },
@@ -97,7 +101,8 @@ export const SELECTED_WORK_INDEX: PortfolioProject[] = [
     subtitle: "The Artist Enterprise: A Blueprint for Independence",
     format: "Educational Strategy Study",
     focus: "Audience development, catalog equity, community monetization, and enterprise architecture.",
-    summary: "An independent educational strategic case study mapping the enterprise architecture for rising Nigerian singer-songwriter Llona, emphasizing catalog ownership, community monetization, and global touring.",
+    summary: "An independent educational blueprint analyzing audience development, catalog equity, and enterprise architecture for rising Nigerian singer-songwriter Llona.",
+    actionLabel: "Explore the study",
     route: "/work/llona-artist-enterprise",
     tags: ["Artist Development", "Afrobeats Ecosystem", "Catalog Equity", "Case Study"]
   },
@@ -108,7 +113,8 @@ export const SELECTED_WORK_INDEX: PortfolioProject[] = [
     subtitle: "Google Creative Fellowship Submission & Digital Artifact",
     format: "Audiovisual Artifact",
     focus: "Community platforms, creative engineering, music technology, and spatial culture.",
-    summary: "The preserved Google Creative Fellowship submission artifact, featuring the pitch film, sound design, strategic slide deck, and portfolio archive exploring physical and digital cultural architecture.",
+    summary: "Preserved Google Creative Fellowship submission combining creative engineering, sound design, and live performance platforms.",
+    actionLabel: "View the project",
     route: "/work/architecting-culture",
     tags: ["Fellowship Submission", "Creative Engineering", "Sound Design", "Culture Architecture"]
   }
@@ -315,7 +321,6 @@ export interface SlideItem {
   number: number;
   imageSrc: string;
   title: string;
-  transcriptionExcerpt: string;
 }
 
 export const LLONA_STUDY_METADATA = {
@@ -323,17 +328,16 @@ export const LLONA_STUDY_METADATA = {
   subject: "Llona (Independent Artist Strategic Case Study)",
   date: "2026",
   totalSlides: 21,
-  pdfOriginalPath: "/assets/aistudio/Creative_Portfolio_Master_Content.docx_4527cc63.pdf",
+  pdfOriginalPath: "/assets/aistudio/Llona_Enterprise_Strategy-1_b09f1c5c.pdf",
+  pdfFileName: "Llona_Enterprise_Strategy-1_b09f1c5c.pdf",
   disclaimer: "Independent educational study analyzing business frameworks, catalog monetization, and global audience development for independent African artists, focusing on Nigerian singer-songwriter Llona. This work is an independent academic research artifact. It was not commissioned, sponsored, or endorsed by Llona, his management, or record label partners, nor was it developed using proprietary or confidential business records.",
-  transcriptDisclaimer: "The automated transcriptions below were generated via automated OCR / document extraction and are provided exclusively as an unverified machine reading reference. Figures, layout, and visual typography should always be verified against the official slide visuals above.",
   slides: Array.from({ length: 21 }, (_, i) => {
     const num = i + 1;
     const padded = String(num).padStart(2, "0");
     return {
       number: num,
       imageSrc: `/assets/llona/page_${padded}.png`,
-      title: `Slide ${num} of 21`,
-      transcriptionExcerpt: `Slide ${num} reference from the master presentation analyzing independent artist growth infrastructure, catalog monetization, and direct-to-consumer cultural enterprise.`
+      title: `Slide ${num} of 21`
     };
   })
 };

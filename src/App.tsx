@@ -1,6 +1,8 @@
 import React from "react";
 import { RouterProvider, useRouter } from "./router";
+import { ThemeProvider } from "./theme";
 import { Navigation } from "./components/Navigation";
+import { Footer } from "./components/Footer";
 import { LandingView } from "./views/LandingView";
 import { SelectedWorkView } from "./views/SelectedWorkView";
 import { ListeningExperienceView } from "./views/ListeningExperienceView";
@@ -44,6 +46,7 @@ function AppRoutes() {
       break;
 
     case "/work/llona-artist-enterprise":
+    case "/work/llona-strategy":
       pageContent = <LlonaStudyView />;
       break;
 
@@ -57,20 +60,38 @@ function AppRoutes() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#F5F1E8]">
-      <div className="portfolio-grid-overlay" aria-hidden="true">{Array.from({length: 12}, (_, i) => <span key={i} />)}</div>
+    <div className="min-h-screen flex flex-col bg-[var(--color-page)] text-[var(--color-text-primary)] relative selection:bg-[var(--color-accent)] selection:text-[var(--color-btn-primary-text)]">
+      {/* Subtle Site-Wide Architectural Grid Lines */}
+      <div className="grid-overlay" aria-hidden="true">
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+        <div className="grid-line" />
+      </div>
+
       <Navigation />
-      <div className="flex-1">
+      <div className="flex-1 relative z-10">
         {pageContent}
       </div>
+      <Footer />
     </div>
   );
 }
 
 export default function App() {
   return (
-    <RouterProvider>
-      <AppRoutes />
-    </RouterProvider>
+    <ThemeProvider>
+      <RouterProvider>
+        <AppRoutes />
+      </RouterProvider>
+    </ThemeProvider>
   );
 }

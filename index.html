@@ -9,6 +9,22 @@
     <meta property="og:title" content="TOBI AFOLAYAN | CREATIVE PORTFOLIO" />
     <meta property="og:description" content="Selected work across music, technology, research, and cultural experiences." />
     <meta property="og:type" content="website" />
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('tobiafo-theme');
+          var theme = stored === 'light' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'light') {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
